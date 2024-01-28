@@ -109,8 +109,41 @@ Moving around vim
 
 Command line mode in vim 
 
-1> / -- search something in vim 
-2> n -- go to next word 
-3> N -- go to previous word 
-4> :s/old/new/g - replace stuff in that one line only 
-5> :%s/old/new/g - Replace everything 
+    1> / -- search something in vim 
+    2> n -- go to next word 
+    3> N -- go to previous word 
+    4> :s/old/new/g - replace stuff in that one line only 
+    5> :%s/old/new/g - Replace everything 
+
+commenting code 
+
+1> Enter visual mode 
+
+    Give V to entire visual line mode 
+
+    Then give : you would get something like this 
+    
+    :'<,'>
+    
+    Then add this s/^/#/ 
+
+2> Entering multi-line mode 
+
+    1> enter visual block mode 
+    2> to insert give shift + I to insert 
+    3> add stuff 
+    4> quit
+
+Macros (reason why vim is chad)
+
+A macro is a way to repeat something thats a pain in the ass to do anyways 
+
+How to record a macro in vim ? 
+
+    1> to being recording press q followed by the register to want to store the macro say 'a' 
+
+    2> do your stuff 
+
+    3> every key gets stored in the register 
+
+    4> To excute the macro do @a 
